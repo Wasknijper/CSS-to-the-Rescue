@@ -1,2 +1,2 @@
 # CSS-to-the-Rescue
-HTML voor de CSS to the Rescue opdracht
+Hier te bekijken: https://oege.ie.hva.nl/~hekm002/mwd-css/
