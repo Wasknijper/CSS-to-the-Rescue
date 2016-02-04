@@ -1,0 +1,81 @@
+body {
+	font-family: Ampersand, Helvetica, sans-serif;
+}
+
+header, main, footer {
+    box-sizing: border-box;
+}
+
+li {
+	list-style: none;
+	padding: 0;
+}
+
+header, footer {
+	padding: 1em;
+}
+
+@font-face {
+	font-family: Ampersand;
+	src: local('Adobe Garamond Pro');
+	unicode-range: U+26;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+body > header {
+	background-color: blue;
+}
+
+nav svg {
+	width: 1em;
+	height: 1em;
+}
+
+main > article {
+	background-color: green;
+	padding: 1em;
+}
+
+footer {
+	background-color: red;
+}
+
+@media (min-device-width: 760px) {
+	body {
+		display: flex;
+		align-items: flex-start;
+	    flex-flow: row-reverse wrap;
+	    justify-content: space-between;
+	}
+
+	body > header {
+		order: 1;
+		width: 25%;
+	}
+
+	main, footer {
+		width: 75%;
+		max-width: 32em;
+	}
+
+
+	footer {
+		order: 3;
+	}
+}
+
+@media (min-device-width: 1000px) {
+	main, footer {
+		max-width: 46em;
+	}
+}
+
+@media (min-device-width: 1200px) {
+	main, footer {
+		max-width: 50em;
+	}
+}
