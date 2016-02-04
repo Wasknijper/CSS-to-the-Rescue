@@ -12,7 +12,6 @@ body {
 	color: #594F4F;
 }
 
-
 h1, h2 {
 	margin: 0;
 }
@@ -45,11 +44,11 @@ a, a:visited, a:active {
 body > header {
 	color: #fff;
 	display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    overflow: auto;
-    padding-top: 1em;
-    background-color: #547980;
+    	flex-flow: column nowrap;
+	align-items: center;
+	overflow: auto;
+	padding-top: 1em;
+	background-color: #547980;
 	border-bottom: 0.3em solid #45ADA8;
 }
 
@@ -65,11 +64,11 @@ body > header li:hover {
 }
 
 body > header h1 {
-    padding: 0 1rem;
+	padding: 0 1rem;
 }
 
 header, main, footer {
-    box-sizing: border-box;
+    	box-sizing: border-box;
 }
 
 main, footer {
@@ -79,9 +78,6 @@ main, footer {
 main header {
 	padding-top: 0;
 	padding-left: 0;
-}
-
-main {
 }
 
 main > article{
@@ -104,17 +100,17 @@ header nav {
 
 header nav > ul {
 	display: flex;
-    flex-flow: column nowrap;
-    align-items: flex-start;
+    	flex-flow: column nowrap;
+	align-items: flex-start;
 	padding-left: 0;
-    width: 100%;
+	width: 100%;
 }
 
 header nav li {
 	width: 100%;    
 	justify-content: flex-start;
-    padding-left: 2em;
-    box-sizing: border-box;
+	padding-left: 2em;
+	box-sizing: border-box;
 }
 
 header nav a {
@@ -166,7 +162,7 @@ footer ul {
 }
 
 footer li{
-    padding: 0 0.15em;
+	 padding: 0 0.15em;
 	display: inline-block;
 }
 
@@ -209,8 +205,8 @@ button {
 	body {
 		display: flex;
 		align-items: flex-start;
-	    flex-flow: row wrap;
-	    justify-content: space-between;
+		flex-flow: row wrap;
+		justify-content: space-between;
 	}
 
 	body > header {
