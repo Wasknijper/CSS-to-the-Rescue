@@ -305,12 +305,20 @@ button {
 	main, footer {
 		padding-left: 27%;
 		width: 100%;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
 		display: flex;
-		flex-flow: row wrap;
+		-webkit-flex-flow: row wrap;
+		    -ms-flex-flow: row wrap;
+		        flex-flow: row wrap;
 	}
 
 	main {
-		align-items: flex-start;
+		-webkit-box-align: start;
+		-webkit-align-items: flex-start;
+		    -ms-flex-align: start;
+		        align-items: flex-start;
 	}
 
 	main > article {
