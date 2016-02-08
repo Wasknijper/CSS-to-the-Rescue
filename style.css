@@ -1,11 +1,15 @@
 @font-face {
 	font-family: Ampersand;
-	src: local('Adobe Garamond Pro');
+	src: local('French Script MT'),
+		 local('Adobe Garamond Pro'),
+		 local('Bookman Old Style'),
+		 local('Garamond'),
+		 local('Times New Roman');
 	unicode-range: U+26;
 }
 
 body {
-	font-family: Ampersand, Helvetica, sans-serif;
+	font-family: Helvetica, sans-serif;
 	padding: 0;
 	margin: 0;
 	background: #9DE0AD;
@@ -18,11 +22,15 @@ h1, h2 {
 
 h1 {
 	font-size: 2em;
+	font-family: Ampersand, Helvetica, sans-serif;
 }
 
-h2, header span {
-	font-size: 16px;
-	font-size: 1rem;
+h1 span {
+	font-size: 0.5em;
+}
+
+h2 {
+	font-size: 1em;
 }
 
 h1 span {
@@ -33,7 +41,7 @@ li {
 	list-style: none;
 }
 
-p a {
+main article:first-of-type p a {
 	font-size: 0.6em;
 }
 
@@ -74,8 +82,7 @@ body > header li:hover {
 }
 
 body > header h1 {
-	padding: 0 16px;
-	padding: 0 1rem;
+	padding: 0 0.5em;
 }
 
 header, main, footer {
@@ -179,7 +186,6 @@ footer {
 	    -ms-flex-pack: center;
 	        justify-content: center;
 	margin-bottom: 1em;
-	font-size: 0.7em;
 	width: 100%;
 }
 
@@ -203,19 +209,17 @@ footer ul {
 }
 
 footer li{
-	 padding: 0 0.15em;
-	display: inline-block;
+	padding: 0 0.15em;
 }
 
 footer address {
-	font-size: 16px;
-	font-size: 1rem;
+	font-size: 1em;
 	width: 100%;
 	margin: 0;
 	text-align: center;
 	-webkit-box-ordinal-group: 4;
 	-webkit-order: 3;
-	    -ms-flex-order: 3;
+   -ms-flex-order: 3;
 	        order: 3;
 }
 
@@ -227,6 +231,10 @@ fieldset, legend {
 	border: 0;
 	margin-top: 1em;
 	padding: 0;
+}
+
+footer a{ 
+	font-size: 0.9em;
 }
 
 legend {
@@ -246,7 +254,9 @@ button {
 	margin-top: 1em;
 }
 
-@media (min-width: 760px) {
+
+/* 760px : 16px = 47,5 */
+@media (min-width: 47.5em) {
 	body {
 		display: -webkit-box;
 		display: -webkit-flex;
@@ -275,7 +285,7 @@ button {
 	}
 
 	main, footer {
-		max-width: 32rem;
+		max-width: 32em;
 		margin-left: 27%;
 	}
 
@@ -292,9 +302,10 @@ button {
 	}
 }
 
-@media (min-width: 1000px) {
+/* 1000px : 16 = 62,5 */
+@media (min-width: 62.5em) {
 	main, footer {
-		max-width: 46rem;
+		max-width: 46em;
 	}
 
 	label {
@@ -302,7 +313,9 @@ button {
 	}
 }
 
-@media (min-width: 1200px) {
+
+/* 1200px : 16 = 75;*/
+@media (min-width: 75em) {
 	main, footer {
 		margin-left: 30%;
 	}
