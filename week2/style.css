@@ -227,9 +227,11 @@ a[role="button"]:hover {
 	width:8em;
 }
 
-.filter-effects figure:nth-of-type(4n){
+.filter-effects figure:nth-last-of-type(n+3), 
+.filter-effects figure:nth-last-of-type(n+3) ~ li { 
 	clear: left;
 }
+
 
 .effect-01 img {
 	-webkit-filter: brightness(150%); 
@@ -413,12 +415,15 @@ button {
 	}
 
 
-	.filter-effects figure:nth-of-type(4n){
+
+	.filter-effects figure:nth-last-of-type(n+3), 
+	.filter-effects figure:nth-last-of-type(n+3) ~ li { 
 		clear: none;
 	}
 
 
-	.filter-effects figure:nth-of-type(5n){
+	.filter-effects figure:nth-last-of-type(n+4), 
+	.filter-effects figure:nth-last-of-type(n+4) ~ li { 
 		clear: left;
 	}
 
@@ -442,12 +447,13 @@ button {
 		max-width: 118.75em;
 	}
 
-	.filter-effects figure:nth-of-type(5n){
+	.filter-effects figure:nth-last-of-type(n+4), 
+	.filter-effects figure:nth-last-of-type(n+4) ~ li { 
 		clear: none;
 	}
 
-
-	.filter-effects figure:nth-of-type(6n){
+	.filter-effects figure:nth-last-of-type(n+5), 
+	.filter-effects figure:nth-last-of-type(n+5) ~ li { 
 		clear: left;
 	}
 }
